@@ -1,0 +1,39 @@
+.tabTitleContainer,
+.linkContainer,
+.titleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.linkContainer {
+    flex-direction: row;
+}
+
+.socialLinkImg {
+    height: 50px;
+    padding: 15px;
+}
+
+.tabTitle {
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .socialLinkImg {
+        height: 40px;
+        padding: 12px;
+    }
+    .tabTitle {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .socialLinkImg {
+        height: 30px;
+        padding: 10px;
+    }
+    .tabTitle {
+        padding: 10px;
+    }
+}
