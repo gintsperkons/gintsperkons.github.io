@@ -1,0 +1,90 @@
+div.skillValue {
+    display: flex;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0)
+}
+
+.skillValue>.progress {
+    display: flex;
+    background-color: rgb(25, 123, 0);
+    width: 0%;
+    font-weight: bolder;
+    justify-content: flex-end;
+    border-right: 1px solid rgb(0, 0, 0)
+}
+
+.skillValue>.progress>div {
+    padding-right: 5px;
+}
+
+.skillName {
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.skill {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.skillShort{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.skillDesc{
+    width: 100%;
+    display: none;
+}
+
+.skill.open >.skillDesc{
+    width: 100%;
+    display: flex;
+}
+
+.skillData{
+    width: 100%;
+}
+
+
+.sectionTitle {
+    cursor: default;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.skillImage {
+    padding-right: 10px;
+    height: 50px;
+}
+
+
+.skillSection {
+    width: 100%;
+    margin-right: 2px;
+    margin-left: 2px;
+    background: linear-gradient(180deg, rgb(40, 40, 40) 0%, rgba(40, 40, 40, 0) 150px);
+}
+
+@media screen and (max-width: 768px) {
+    .tabContent {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tabContent {
+        flex-direction: column;
+    }
+}

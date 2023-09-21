@@ -1,43 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static\css\base.css">
-    <link rel="stylesheet" href="static\css\mainPage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="static\img\logos\icons8-portfolio-96.png"
+    />
+    <link rel="stylesheet" href="static\css\base.css" />
+    <link rel="stylesheet" href="static\css\index\mainPage.css" />
+    <link rel="stylesheet" href="static\css\index\skillTab.css" />
+    <link rel="stylesheet" href="static\css\index\projectTab.css" />
     <title>Gints Portfolio</title>
-</head>
+  </head>
 
-<body>
-    Work in progress!!!
+  <body>
     <div class="titleContainer">
-        <h1 class="title">Gints Kristaps Pērkons</h1>
+      <h1 class="title">Gints Kristaps Pērkons</h1>
     </div>
     <div class="linkContainer">
-        <div id="githubLink">
-            <a href="https://github.com/gintsperkons">
-                <img class="socialLinkImg" src="static/img/logos/github-mark/github-mark-white.svg" alt="GitHub">
-            </a>
-        </div>
-        <div id="linkedinLink">
-            <a href="https://www.linkedin.com/in/gints-kristaps-perkons-5346a3224/">
-                <img class="socialLinkImg" src="static/img/logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn">
-            </a>
-        </div>
-        <div id="gmailLink">
-            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=gintskristaps.perkons@gmail.com&su=&body=">
-                <img class="socialLinkImg" src="static/img/logos/icons8-gmail.svg" alt="Gmail">
-            </a>
-        </div>
+      
+      <div id="githubLink">
+        <a href="https://github.com/gintsperkons">
+          <img class="socialLinkImg" src="static/img/logos/github-mark/github-mark-white.svg" alt="GitHub" />
+        </a>
+      </div>
+      
+      <div id="linkedinLink">
+        <a href="https://www.linkedin.com/in/gints-kristaps-perkons-5346a3224/">
+          <img class="socialLinkImg" src="static/img/logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn" />
+        </a>
+      </div>
+      
+      <div id="gmailLink">
+        <a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;to=gintskristaps.perkons@gmail.com&amp;su=&amp;body=">
+          <img class="socialLinkImg" src="static/img/logos/icons8-gmail.svg" alt="Gmail" />
+        </a>
+      </div>
+      
     </div>
     <div class="tabTitleContainer">
-        <h3 class="tabTitle">Projects</h3>
-        <h3 class="tabTitle">Skills</h3>
-        <h3 class="tabTitle">Contacts</h3>
+      <h3 id="projectsTitle" class="tabTitle active">Projects</h3>
+      <h3 id="skillsTitle" class="tabTitle">Skills</h3>
+      <h3 id="aboutTitle" class="tabTitle">About</h3>
     </div>
-
-</body>
-
+    <div class="tabContainer">
+      
+      <div id="projectsTab" class="tabContent visible">
+        <div class="filtecCont">
+          <select name="" id="projectFilter">
+            <option value="all">All</option>
+          
+          <option value="games">Games</option>
+          
+          <option value="web">Web</option>
+          
+          </select>
+        </div>
+        
+        <div class="project" projectType="games">
+          <div class="projectImageCont">
+            <a class="projectLink" href="projects/defyingGravity.html"
+              ><img
+                src="https://drive.google.com/uc?export=view&amp;id=1GrrhBmtPhU7SXjBhjt5CA8kkuavCoZzc"
+                alt="Defying Gravity Image"
+                class="projectThumbnail"
+            /></a>
+          </div>
+          <div class="projectInfo">
+            <div class="projectTop">
+              <div class="projectName">
+                <a class="projectLink" href="projects/defyingGravity.html"
+                  >Defying Gravity</a
+                >
+              </div>
+              <div class="projectSmallInfo">
+                <div class="projectType">Games</div>
+                <div class="projectTime">2023.Q2</div>
+              </div>
+            </div>
+            <div class="projectDesc">tempDescription</div>
+          </div>
+        </div>
+        
+        <div class="project" projectType="web">
+          <div class="projectImageCont">
+            <a class="projectLink" href="projects/teachtyping.html"
+              ><img
+                src="https://drive.google.com/uc?export=view&amp;id=1gC16IEWn9C0hpSsnWGmYdPnyMugdCkjn"
+                alt="TeachTyping Image"
+                class="projectThumbnail"
+            /></a>
+          </div>
+          <div class="projectInfo">
+            <div class="projectTop">
+              <div class="projectName">
+                <a class="projectLink" href="projects/teachtyping.html"
+                  >TeachTyping</a
+                >
+              </div>
+              <div class="projectSmallInfo">
+                <div class="projectType">Web</div>
+                <div class="projectTime">2023.Q2</div>
+              </div>
+            </div>
+            <div class="projectDesc">TeachTyping is a typing game prototype project developed as university course final work. It uses PHP and MYSQL database to make it unique for a user. It has lessons and each lesson you type text seen on screen and if you make a mistake you can correct it, but it will know that you corrected it. When the lesson is finished it shows all information about how you did and saves it to the database.</div>
+          </div>
+        </div>
+        
+      </div>
+      <div id="skillsTab" class="tabContent">
+        
+        <section class="skillSection">
+          <h4 class="sectionTitle">Programming Languages</h4>
+          <div class="skillContainer">
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/programming/icons8-python.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Python</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>82</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/programming/icons8-javascript.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">JavaScript</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>65</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/programming/icons8-cpp.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">C++</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>60</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/programming/icons8-java.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Java</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>55</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/programming/icons8-sql-48.png" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">SQL</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>30</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="skillSection">
+          <h4 class="sectionTitle">Software</h4>
+          <div class="skillContainer">
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/software/icons8-visual-studio-code.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Visual Studio Code</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>85</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/logos/github-mark/github-mark-white.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Github</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>75</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/software/icons8-visual-studio.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Visual Studio Comunity</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>65</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/software/icons8-unreal-engine.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Unreal Engine</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>55</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/software/icons8-unity.svg" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Unity</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>20</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <section class="skillSection">
+          <h4 class="sectionTitle">Others</h4>
+          <div class="skillContainer">
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/others/icons8-problem-solving-64.png" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Problem solving</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>75</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+            <div class="skill">
+              <div class="skillShort">
+                <img src="static/img/skillIcons/others/icons8-talk-64.png" alt="" class="skillImage" />
+                <div class="skillData">
+                  <p class="skillName">Communication</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>50</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">testText</div>
+            </div>
+            
+          </div>
+        </section>
+        
+      </div>
+      <div id="aboutTab" class="tabContent">3</div>
+    </div>
+    <div class="siteFooter">
+      <p class="footerTextRow">
+        Site designed by:
+        <a
+          style="color: white"
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=gintskristaps.perkons@gmail.com&su=&body="
+          >Gints Kristaps Pērkons</a
+        >.
+      </p>
+      <p class="footerTextRow">
+        Icons by:
+        <a style="color: white" href="https://icons8.com"> icon8</a>.
+      </p>
+    </div>
+    <script src="static/js/index/tabsIndex.js"></script>
+    <script src="static/js/index/skillTab.js"></script>
+    <script src="static/js/index/projectFilter.js"></script>
+  </body>
 </html>
