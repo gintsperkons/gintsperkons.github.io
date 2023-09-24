@@ -4,21 +4,23 @@
 .imageLeft{
    display:flex;
    flex-direction:row;
+   padding:10px;
 }
 .imageLeft > a > img{
     width:100%;
 }
 .imageLeft > a{
     width:70%;
-   padding:10px;
+   padding-right:10px;
 }
 .imageRight{
    display:flex;
    flex-direction:row-reverse;
+   padding:10px;
 }
 .imageRight > a{
     width:70%;
-   padding:10px;
+   padding-left:10px;
 }
 .imageRight > a > img{
     width:100%;
@@ -28,21 +30,23 @@
 .imageLeft{
    display:flex;
    flex-direction:column;
+   padding:10px;
 }
 .imageLeft > a > img{
     width:100%;
 }
 .imageLeft > a{
     width:100%;
-   padding:10px;
+   padding-right:0px;
 }
 .imageRight{
    display:flex;
    flex-direction:column;
+   padding:10px;
 }
 .imageRight > a{
     width:100%;
-   padding:10px;
+   padding-left:0px;
 }
 .imageRight > a > img{
     width:100%;

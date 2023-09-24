@@ -49,12 +49,12 @@
 
 @media screen and (max-width: 768px) {
     .projectImageCont{
-        width: 256px;
+        width: 100%;
     }
     
     
     .projectThumbnail{
-        width:256px;
+        width:100%;
     }
     
 .project{
@@ -66,12 +66,12 @@
 
 @media screen and (max-width: 480px) {
     .projectImageCont{
-        width: 144px;
+        width: 100%;
     }
     
     
     .projectThumbnail{
-        width:144px;
+        width:100%;
     }
     .project{
         flex-direction: column;

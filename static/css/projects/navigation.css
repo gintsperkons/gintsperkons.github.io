@@ -1,0 +1,53 @@
+#navBar {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom:10px;
+  }
+  #homeImg > a > img {
+    filter: invert(1);
+    height: 75px;
+  }
+  .dropdown {
+    display: inline-block;
+    position: relative; 
+    width:auto;
+    overflow: hidden;
+    height:1000px;
+  }
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width:auto;
+    padding-top:10px;
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+  
+  #projectList{ 
+    font-size:50px;
+    background:#303039eb;
+    border-width:1px;
+    padding-right:10px;
+    padding-left:10px;
+    border-color:#fff;
+    border-radius:100px;
+  }
+  .dropdown-options > a{
+    
+    color:#fff;
+    background:#303039eb;
+    border-width:1px;
+    border-color:#fff;
+    border-radius:100px;
+    padding-right:5px;
+    padding-left:5px;
+    text-decoration:none;
+    text-wrap:nowrap;
+    font-size:25px;
+    
+  }
