@@ -25,6 +25,16 @@
 .imageRight > a > img{
     width:100%;
 }
+.socialLinkImg{
+   height:50px;
+}
+.linkContainer > a{
+   padding:5px;
+}
+.linkContainer > a:hover{
+   background:#2c2a3b;
+   border-radius:100px;
+}
 @media screen and (max-width: 768px) {
      
 .imageLeft{
