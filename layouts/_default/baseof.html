@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    {{ $css := resources.Get "scss/main.scss"  | resources.ToCSS}}
+    {{ $css := resources.Get "scss/main.sass"  | resources.ToCSS}}
     <link rel="stylesheet" href="{{$css.RelPermalink}}">
 
     <title>{{.Site.Title}}</title>
@@ -35,9 +35,10 @@
     <!-- End Google Tag Manager (noscript) -->
 
     {{partial "header.html" .}}
-
+    <div id="body">
     {{block "main" .}}
 
     {{end}}
+</div>
 </body>
 </html>
