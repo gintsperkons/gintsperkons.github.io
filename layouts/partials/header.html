@@ -1,4 +1,28 @@
 
-<div id="header">
-    headers sass test   
+<div id="header" class="headerBig">
+    <h1 id="pageHeader">
+        {{.Params.PageHeader}}
+    </h1>
+    <div id="links">
+        {{ range index .Site.Data "links" }}
+        <div id="{{ .name }}Link">
+            <a href="{{ .link }}">
+              <img class="socialLinkImg" src="{{ .image }}" alt="{{ .name }}">
+            </a>
+          </div>
+        {{ end }}    
+    </div>
+    <div id="nav">
+       <div class="navElement">Projects</div>
+       <div class="navElement">Skills</div>
+       <div class="navElement">About</div>
+        
+       
+    </div>
+    <div id="toggleDarkMode"><svg id="toggleBackground" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <rect width="98%" height="100%" x="0" y="0" fill="black" ry="50%"/>
+    </svg>
+    <svg id="toggleForeground" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="26%" cy="50%" r="30%" fill="white" />
+    </svg></div>
 </div>

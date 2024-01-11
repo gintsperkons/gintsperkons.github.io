@@ -28,17 +28,19 @@
 
     <title>{{.Site.Title}}</title>
 </head>
-<body>
+<body class="dark-mode">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8MR7HG9"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     {{partial "header.html" .}}
-    <div id="body">
+    <div id="body" class="headerBig">
     {{block "main" .}}
 
     {{end}}
-</div>
+    {{partial "footer.html" .}}
+    </div>
+    <script src="/js/header.js"></script>
 </body>
 </html>

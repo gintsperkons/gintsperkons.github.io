@@ -1,7 +1,70 @@
 
 #header
-    background: $lightSeconderyColor
+    background: var(--SeconderyColor)
     width: 100%
-    height: $headerHeight
     position: fixed
-    box-shadow: 0px 2px 4px 0px $lightSeconderyColor
+    box-shadow: 0px 2px 4px 0px var(--SeconderyColor)
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
+    display: flex
+
+#links
+    display: flex
+    justify-content: center
+
+.socialLinkImg
+    height: clamp(20px, 7vw, 50px)
+    margin: clamp(1px, 1vw, 10px)
+
+#header.headerBig
+    height: $headerHeightBig
+    flex-direction: column
+
+#header.headerBig #nav
+    flex-direction: row
+
+#header.headerBig #pageHeader
+    display: flex
+    justify-content: center
+    margin-top: 10vh
+    font-size: clamp(20px, 7vw, 70px)
+
+    
+#header.headerBig #links
+    flex-direction: row
+
+#header.headerSmall
+    height: $headerHeightSmall
+
+#toggleDarkMode
+    width: clamp(20px, 14vw, 20px)
+    height: clamp(10px, 7vw, 10px)
+    margin: clamp(1px, 1vw, 10px)
+    cursor: pointer
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
+
+#toggleDarkMode > svg 
+    width: clamp(20px, 14vw, 60px)
+    height: clamp(10px, 7vw, 30px)
+
+#toggleBackground
+    position: absolute
+
+#toggleForeground
+    position: absolute
+    margin-left: var(--darkModeToggleMarginLeft)
+    -webkit-transition: margin-left 0.5s ease-in-out
+    -moz-transition: margin-left 0.5s ease-in-out
+    -o-transition: margin-left 0.5s ease-in-out
+    transition: margin-left 0.5s ease-in-out
+
+#toggleDarkMode #toggleBackground
+    filter: var(--primaryFilter)
+
+#toggleDarkMode #toggleForeground
+    filter: var(--seconderyFilter)

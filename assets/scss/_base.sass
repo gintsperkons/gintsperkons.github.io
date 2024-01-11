@@ -1,12 +1,40 @@
 body
+    --PrimaryColor: #95d3ff
+    --SeconderyColor: #31c1ff7f
+    --PrimaryTextColor: black
+    --darkModeToggleMarginLeft: 0px
+    --primaryFilter: invert(94%) sepia(5%) saturate(7060%) hue-rotate(173deg) brightness(90%) contrast(127%)
+    --seconderyFilter: filter: invert(4%) sepia(16%) saturate(4709%) hue-rotate(201deg) brightness(101%) contrast(101%)
     all: unset
-    background: $lightPrimaryColor
+    background: var(--PrimaryColor)
+    color: var(--PrimaryTextColor)
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
+
+.dark-mode 
+    --PrimaryColor: #060b1a
+    --SeconderyColor: #00b2ff0d
+    --PrimaryTextColor: white
+    --darkModeToggleMarginLeft: clamp(10px, 6.5vw, 28px)
+    --primaryFilter: invert(50%) sepia(50%) saturate(7060%) hue-rotate(173deg) brightness(90%) contrast(127%)
+    --seconderyFilter: invert(85%) sepia(38%) saturate(6022%) hue-rotate(168deg) brightness(101%) contrast(102%)
+    color: var(--PrimaryTextColor)
+    
 
 #body
-    margin-top: $headerHeight
-    padding: 10px
+    -webkit-transition: margin-top 0.5s ease
+    -moz-transition: margin-top 0.5s ease
+    -o-transition: margin-top 0.5s ease
+    transition: margin-top 0.5s ease
+    margin-bottom: $footerHeight
 
-#pageHeader
-    display: flex
-    justify-content: center
-    align-items: center
+#body.headerBig
+    margin-top: $headerHeightBig
+
+
+#body.headerSmall
+    margin-top: $headerHeightSmall + 10vh
+
+

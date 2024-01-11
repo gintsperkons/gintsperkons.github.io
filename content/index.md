@@ -5,7 +5,6 @@
     "pageHeader":"Gints Kristaps Pērkons"
 
 }
-
 # Working Progress Github has backup of old page
 # Working Progress Github has backup of old page
 # Working Progress Github has backup of old page
