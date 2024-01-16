@@ -1,12 +1,12 @@
 //Resizes header on scroll
 window.onscroll = function () {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    changeClass("headerBig", "headerSmall", document.getElementById("header"));
-    changeClass("headerBig", "headerSmall", document.getElementById("body"));
-  } else {
-    changeClass("headerSmall", "headerBig", document.getElementById("header"));
-    changeClass("headerSmall", "headerBig", document.getElementById("body"));
-  }
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      changeClass("headerBig", "headerSmall", document.getElementById("header"));
+      changeClass("headerBig", "headerSmall", document.getElementById("body"));
+    } else {
+      changeClass("headerSmall", "headerBig", document.getElementById("header"));
+      changeClass("headerSmall", "headerBig", document.getElementById("body"));
+    }
 };
 
 //Toggle dark mode

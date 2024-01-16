@@ -1,6 +1,7 @@
 body
     --PrimaryColor: #95d3ff
-    --SeconderyColor: #31c1ff7f
+    --SeconderyColor: #6bc1ff
+    --textColorLink: #460072
     --PrimaryTextColor: black
     --darkModeToggleMarginLeft: 0px
     --primaryFilter: invert(94%) sepia(5%) saturate(7060%) hue-rotate(173deg) brightness(90%) contrast(127%)
@@ -15,9 +16,10 @@ body
 
 .dark-mode 
     --PrimaryColor: #060b1a
-    --SeconderyColor: #00b2ff0d
+    --SeconderyColor: #0c1532
+    --textColorLink: #a91fff
     --PrimaryTextColor: white
-    --darkModeToggleMarginLeft: clamp(10px, 6.5vw, 28px)
+    --darkModeToggleMarginLeft: clamp(10px, 6.5vw, 19px)
     --primaryFilter: invert(50%) sepia(50%) saturate(7060%) hue-rotate(173deg) brightness(90%) contrast(127%)
     --seconderyFilter: invert(85%) sepia(38%) saturate(6022%) hue-rotate(168deg) brightness(101%) contrast(102%)
     color: var(--PrimaryTextColor)
@@ -35,6 +37,9 @@ body
 
 
 #body.headerSmall
-    margin-top: $headerHeightSmall + 10vh
+    margin-top: $headerHeightSmall
 
 
+a
+    color: var(--textColorLink)
+    text-decoration: none

@@ -1,9 +1,9 @@
-{
-    "projects": {
+
+    {
         "defyingGravity":{
             "name": "Defying Gravity",
             "notFinished":"Working progress! Does not contain full description!",
-            "image": "https://drive.google.com/uc?export=view&id=1GrrhBmtPhU7SXjBhjt5CA8kkuavCoZzc",
+            "image": "img/thumbnails/definingGravityThumbnail.png",
             "description": "Defying Gravity is a game prototype developed in Unreal Engine and was made for a year-long project at the university. It is a simple platformer with multiple levels and some physics. There is an ability to climb a wall if the wall is low enough and if you decide to jump off the map you will be returned to level start. There is also the ability to pick up coins although it only makes the number go up.",
             "type": "Game",
             "time": "2023.Q2",
@@ -15,7 +15,7 @@
         },
         "teachTyping":{
             "name": "TeachTyping",
-            "image": "https://drive.google.com/uc?export=view&id=1gC16IEWn9C0hpSsnWGmYdPnyMugdCkjn",
+            "image": "img/thumbnails/teachTypingThumbnail.png",
             "description": "TeachTyping is a typing game prototype project developed as university course final work. It uses PHP and MYSQL database to make it unique for a user. It has lessons and each lesson you type text seen on screen and if you make a mistake you can correct it, but it will know that you corrected it. When the lesson is finished it shows all information about how you did and saves it to the database.",
             "type": "Web",
             "time": "2023.Q2",
@@ -28,7 +28,7 @@
         "snakeGame":{
             "name": "SnakeGame",
             "notFinished":"Working progress! Does not contain full description!",
-            "image": "https://drive.google.com/uc?export=view&id=1-jyBCFZGs6yhC6T1HcLTvsF3p12R_X2I",
+            "image": "img/thumbnails/snakeGameThumbnail.png",
             "description": "Snake game is a clone game of popular game snake made in Java using Swing GUI widget toolkit for Java.",
             "type": "Game",
             "time": "2022.Q2",
@@ -39,4 +39,3 @@
             }
         }
     }
-}

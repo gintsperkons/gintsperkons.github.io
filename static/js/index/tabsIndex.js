@@ -20,6 +20,7 @@ if (skill.className.includes("open")) {
 } 
 
 const showTab = (tab) => {
+  console.log(tab);
   setCookie("currentTab", tab);
   for (const item of document.getElementsByClassName("tabContent")) {
     if (item.id === tab) {
@@ -28,12 +29,12 @@ const showTab = (tab) => {
     }
     item.className = "tabContent";
   }
-  for (const item of document.getElementsByClassName("tabTitle")) {
+  for (const item of document.getElementsByClassName("navElement")) {
     if (item.id === tab.replace("Tab", "Title")) {
-      item.className = "tabTitle active";
+      item.className = "navElement active";
       continue;
     }
-    item.className = "tabTitle";
+    item.className = "navElement";
   }
 };
 
@@ -44,7 +45,7 @@ if (currentTab) {
   showTab("projectsTab");
 }
 
-for (const tab of document.getElementsByClassName("tabTitle")) {
+for (const tab of document.getElementsByClassName("navElement")) {
   tab.addEventListener("click", (e) => {
     showTab(tab.id.replace("Title", "Tab"));
   });

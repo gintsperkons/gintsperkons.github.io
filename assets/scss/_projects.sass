@@ -1,0 +1,49 @@
+.project
+    display: flex
+    width: 100vw
+    justify-content: space-around
+    flex-direction: row
+    padding-top: 5px
+    padding-bottom: 5px
+@media (max-width: 512px) 
+    .project
+        flex-direction: column
+
+
+
+.projectImageCont
+    padding-left: 5px 
+    display: flex
+    align-items: center
+    justify-content: center
+.projectLink
+    color: var(--textColorLink)
+    text-decoration: none
+.projectThumbnail
+    width: clamp(200px, 28vw, 400px)
+.projectInfo
+    width: 68vw
+    padding-right: 5px 
+    padding-left: 5px 
+@media (max-width: 512px) 
+    .projectInfo
+        width: 98vw
+.projectName
+    font-weight: 1000
+    font-size: 2rem
+
+.projectTop
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.projectSmallInfo
+    display: flex
+    flex-direction: column
+.projectType
+    padding-bottom: 5px
+    padding-left: 5px
+.projectTime
+    padding-left: 5px
+.projectDesc
+    padding-top: 5px 

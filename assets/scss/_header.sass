@@ -15,7 +15,7 @@
     justify-content: center
 
 .socialLinkImg
-    height: clamp(20px, 7vw, 50px)
+    height: 50px
     margin: clamp(1px, 1vw, 10px)
 
 #header.headerBig
@@ -28,8 +28,8 @@
 #header.headerBig #pageHeader
     display: flex
     justify-content: center
-    margin-top: 10vh
-    font-size: clamp(20px, 7vw, 70px)
+    margin-top: 75px
+    font-size: clamp(35px, 9.5vw, 70px)
 
     
 #header.headerBig #links
@@ -37,11 +37,14 @@
 
 #header.headerSmall
     height: $headerHeightSmall
+    justify-content: space-between
 
 #toggleDarkMode
-    width: clamp(20px, 14vw, 20px)
-    height: clamp(10px, 7vw, 10px)
-    margin: clamp(1px, 1vw, 10px)
+    width: fit-content
+    width: clamp(20px, 14vw, 40px)
+    height: clamp(10px, 7vw, 20px)
+    margin-left: clamp(1px, 1vw, 3px)
+    margin-right: clamp(1px, 1vw, 3px)
     cursor: pointer
     -webkit-transition: all 0.5s ease
     -moz-transition: all 0.5s ease
@@ -49,8 +52,8 @@
     transition: all 0.5s ease
 
 #toggleDarkMode > svg 
-    width: clamp(20px, 14vw, 60px)
-    height: clamp(10px, 7vw, 30px)
+    width: clamp(20px, 14vw, 40px)
+    height: clamp(10px, 7vw, 20px)
 
 #toggleBackground
     position: absolute
@@ -68,3 +71,16 @@
 
 #toggleDarkMode #toggleForeground
     filter: var(--seconderyFilter)
+
+.headerSmall #nav
+    display: flex
+    flex-direction: column
+    margin-top: auto
+    margin-bottom: auto                              
+
+    align-items: flex-start
+.headerBig #nav
+    display: flex
+    flex-direction: row
+    a
+        padding-left: 10px
