@@ -1,0 +1,59 @@
+#skillsTab
+    display: flex
+    flex-direction: row
+    justify-content: center
+    background: linear-gradient(180deg, var(--SeconderyColor) 1%, rgba(255, 255, 255, 0) 150px)
+    
+@media (max-width: 620px) 
+    #skillsTab
+        flex-direction: column
+        background: inherit
+.skillSection
+    display: flex
+    flex-direction: column
+
+    width: 30vw
+@media (max-width: 620px) 
+    .skillSection
+        background: linear-gradient(180deg, var(--SeconderyColor) 1%, rgba(255, 255, 255, 0) 150px)
+@media (max-width: 620px) 
+    .skillSection
+        width: 100vw
+        align-self: center
+.skillSectionName
+    font-size: clamp(17px,2.5vw,50px)
+    align-self: center
+    margin: 5px
+.skillContainer
+    margin: 5px
+.skill
+    display: flex
+    flex-direction: column
+.skillShort
+    display: flex
+    flex-direction: row
+.skillImage
+    width: 48px
+    height: auto
+    align-self: center
+.skillData
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding: 5px
+    justify-content: center
+.skillName
+    margin: 2px
+.skillValue
+    margin: 2px
+.progress
+    background: #00ff00
+    color:#000000
+    font-weight: 900
+    padding-left: 5px
+.skillDesc
+    display: none
+    
+
+
+    

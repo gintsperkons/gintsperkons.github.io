@@ -50,45 +50,74 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
     {{partial "header.html" .}}
     <div id="body" class="headerBig">
       <div class="tabContent" id="projectsTab">
-        {{range index .Site.Data "projects"}}
+        {{range sort .Site.Data.projects "time" "desc" }}
         <div class="project" projectType="{{lower .type}}">
-            <div class="projectImageCont">
-              <a class="projectLink" href="projects/defyingGravity.html"
-                ><img
-                  src="{{.image}}"
-                  alt="{{.name}} Image"
-                  class="projectThumbnail"
-              /></a>
-            </div>
-            <div class="projectInfo">
-              <div class="projectTop">
-                <div class="projectName">
-                  <a class="projectLink" href="{{.projectPage}}"
-                    >{{.name}}</a
-                  >
-                </div>
-                <div class="projectSmallInfo">
-                  <div class="projectType">{{.type}}</div>
-                  <div class="projectTime">{{.time}}</div>
-                </div>
-              </div>
-                {{ if .notFinished }}
-                  {{ .notFinished }}
-                {{ end }}
-              <div class="projectDesc">{{.description}}</div>
-            </div>
+          <div class="projectImageCont">
+            <a class="projectLink" href="projects/defyingGravity.html"
+              ><img
+                src="{{.image}}"
+                alt="{{.name}} Image"
+                class="projectThumbnail"
+            /></a>
           </div>
+          <div class="projectInfo">
+            <div class="projectTop">
+              <div class="projectName">
+                <a class="projectLink" href="{{.projectPage}}">{{.name}}</a>
+              </div>
+              <div class="projectSmallInfo">
+                <div class="projectType">{{.type}}</div>
+                <div class="projectTime">{{.time}}</div>
+              </div>
+            </div>
+            {{ if .notFinished }} {{ .notFinished }} {{ end }}
+            <div class="projectDesc">{{.description}}</div>
+          </div>
+        </div>
         {{end}}
       </div>
-      <div class="tabContent" id="skillsTab">2</div>
-      <div class="tabContent" id="aboutTab">3</div>
+      <div class="tabContent" id="skillsTab">
+        {{range sort .Site.Data.skills "name" "desc"}}
+        <div class="skillSection">
+          <div class="skillSectionName">{{.name}}</div>
+          <div class="skillContainer">
+            {{range sort .data "score" "desc"}}
+            <div class="skill">
+              <div class="skillShort">
+                <img
+                  src="{{.image}}"
+                  alt="{{.name}} image"
+                  class="skillImage"
+                />
+                <div class="skillData">
+                  <p class="skillName">{{.name}}</p>
+                  <div class="skillValue">
+                    <div class="progress">
+                      <div>{{.score}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skillDesc">{{.description}}</div>
+            </div>
+            {{end}}
+          </div>
+        </div>
+        {{end}}
+      </div>
+      <div class="tabContent" id="aboutTab">
+        <div id="aboutDescription">
+          I live in Latvia and currantly am a student in university and aspiring
+          game developer looking to be a part of some game development company.
+        </div>
+      </div>
       {{block "main" .}} {{end}} {{partial "footer.html" .}}
     </div>
     <script src="/js/header.js"></script>
     <script src="/js/index/tabsIndex.js"></script>
+    <script src="/js/index/skillTab.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 const getCookie = (name) => {
   for (const cookie of document.cookie.split(";")) {
-    if (cookie.split("=")[0] === name) {
+    if (cookie.split("=")[0].trim() === name) {
       return cookie.split("=")[1];
     }
   }
@@ -39,6 +39,7 @@ const showTab = (tab) => {
 };
 
 var currentTab = getCookie("currentTab");
+console.log(currentTab);
 if (currentTab) {
   showTab(currentTab);
 } else {
