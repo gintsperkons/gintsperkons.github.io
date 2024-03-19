@@ -1,0 +1,26 @@
+#projectList {
+  display: flex;
+  flex-direction: column; }
+
+.project {
+  display: flex; }
+  .project .projectImage > a > img {
+    border: 1px solid var(--border-primary-color); }
+
+@media screen and (min-width: 769px) {
+  .project {
+    flex-direction: row; }
+    .project .projectImage {
+      width: clamp(200px, 30vw, 300px);
+      padding-right: 10px;
+      padding-bottom: 10px; }
+    .project .projectImage > a {
+      width: clamp(200px, 30vw, 300px); }
+    .project .projectImage > a > img {
+      width: clamp(200px, 30vw, 300px); } }
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column; }
+    .project .projectImage > a > img {
+      width: 100%; } }

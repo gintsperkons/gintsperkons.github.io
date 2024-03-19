@@ -1,26 +1,7 @@
-
-<div id="header" class="headerBig">
-    <h1 id="pageHeader">
-        {{.Params.PageHeader}}
-    </h1>
-    <div id="links">
-        {{ range index .Site.Data "links" }}
-        <div id="{{ .name }}Link">
-            <a href="{{ .link }}">
-              <img class="socialLinkImg" src="{{ .image }}" alt="{{ .name }}">
-            </a>
-          </div>
-        {{ end }}    
+<div id="header">
+    <div id="headerTop">
+        <h1 id="pageTitle">{{.Params.pageTitle}}</h1>
+        {{partial "hamburgerIcon.html" .}}
     </div>
-    <div id="nav">
-    {{range .Params.Navigation}}
-        {{ $var := "" }}
-        {{ if eq .path $var}}
-        <a class="navElement" id="{{.id}}Title">{{.name}}</a>
-        {{ else }}
-        <a class="navElement" id="{{.id}}Title" href="{{.path}}">{{.name}}</a>
-        {{ end }}
-       
-       {{end}}
-    </div>
+        {{partial "navigation.html" .}}
 </div>

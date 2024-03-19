@@ -1,0 +1,29 @@
+.hamburgerIcon
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 40px
+    width: 40px
+    &:hover
+        cursor: pointer
+    .hamburgerLine
+        height: 3px
+        width: 100%
+        background-color: #000
+        transition: all 100ms ease-in-out
+.x:nth-child(1)
+    transition: all 100ms ease-in-out
+    transform: rotate(45deg)
+    transform-origin: top left
+    width: 53px
+    
+.x:nth-child(2)
+    transition: all 100ms ease-in-out
+    transformm-origin: center
+    width: 0
+.x:nth-child(3)
+    transition: all 100ms ease-in-out
+    transform: rotate(-45deg)
+    transform-origin: bottom left
+    width: 53px
+ 

@@ -1,0 +1,31 @@
+<div id="projectList">
+    {{range sort .Site.Data.projects "time" "desc"}}
+    <div class="project">
+        <div class="projectImage">
+            <a href="{{.projectPage}}" class="projectLink">
+            <img src="{{.image}}" alt="{{.name}}" >
+            </a>
+        </div>
+        <div class="projectInfo">
+            <div class="topInfo">
+                <div class="name">
+                    <a href="{{.projectPage}}" class="projectLink">
+                    {{.name}}
+                    </a>
+                </div>
+                <div class="shortInfo">
+                    <div class="type">{{.type}}</div>
+                    <div class="time">{{.time}}</div>
+                </div>
+            </div>
+            <div class="description">
+                {{if not .complete}}
+                    The project description is not yet complete!
+                    <br>
+                {{end}}
+                {{.descriptionShort}}
+            </div>
+        </div>
+    </div>
+    {{end}}
+</div>

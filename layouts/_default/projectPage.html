@@ -1,0 +1,30 @@
+{{define "head"}}
+{{ $css := resources.Get "sass/projectPage.sass" | resources.ToCSS}}
+<link rel="stylesheet" href="{{$css.RelPermalink}}" />
+<title>{{.Site.Title}}</title>
+{{end}}
+
+{{define "scripts"}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+<script src="/js/homePage.js"></script>
+{{end}}
+
+{{define "header"}}
+{{partial "header.html" .}}
+{{end}}
+
+{{define "footer"}}
+{{end}}
+
+{{define "main"}}
+<div class="content">
+    {{ $icons := .Site.Params.Icons}}
+    {{range .Site.Data.projects}}
+    {{ if eq .projectPage $.RelPermalink}}
+    {{partial "projectTopContainer.html" (dict "context" . "icons" $icons)}}
+    {{partial "projectContent.html" .}}
+        
+    {{end}}
+    {{ end }}
+</div>
+{{end}}

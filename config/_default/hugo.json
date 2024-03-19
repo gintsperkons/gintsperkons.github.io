@@ -1,5 +1,32 @@
 {
   "baseURL": "https://gintsperkons.github.io/",
   "languageCode": "en-us",
-  "title": "Gints Portfolio"
+  "title": "Gints Portfolio",
+  "params": {
+    "navigation": [
+      {
+        "title": "Home",
+        "url": "/",
+        "weight": 1
+      },
+      {
+        "title": "About",
+        "url": "/about/",
+        "weight": 4
+      },
+      {
+        "title": "Projects",
+        "url": "/projects/",
+        "weight": 2
+      },
+      {
+        "title": "Skills",
+        "url": "/skills/",
+        "weight": 3
+      }
+    ],
+    "icons":{
+      "github":"/img/logos/github-mark/github-mark-white.svg"
+    }
+  }
 }

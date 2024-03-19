@@ -1,0 +1,19 @@
+//Global styles
+@import "global/global"
+@import "global/base"
+@import "global/header"
+@import "global/navigation"
+
+
+//Laptops, Desktops, large screens
+@media screen and (min-width: 769px) 
+    @import "desktop/base"
+    @import "desktop/navigation"
+
+//Phone, iPads, Tablets
+@media screen and (max-width: 768px)
+    @import "phone/base"
+    @import "phone/navigation"
+    @import "phone/hamburgerMenu"
+
+

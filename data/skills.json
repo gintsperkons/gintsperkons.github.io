@@ -6,37 +6,37 @@
         "name": "Python",
         "score": 83,
         "image": "img/skillIcons/programming/icons8-python.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "C++",
         "score": 60,
         "image": "img/skillIcons/programming/icons8-cpp.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "SQL",
         "score": 35,
         "image": "img/skillIcons/programming/icons8-sql-48.png",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "JavaScript",
         "score": 65,
         "image": "img/skillIcons/programming/icons8-javascript.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "Java",
         "score": 50,
         "image": "img/skillIcons/programming/icons8-java.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "PHP",
         "score": 55,
         "image": "img/skillIcons/programming/icons8-php-logo.svg",
-        "description": "testText"
+        "description": "testText description"
       }
     ]
   },
@@ -47,31 +47,31 @@
         "name": "Unreal Engine",
         "score": 55,
         "image": "img/skillIcons/software/icons8-unreal-engine.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "Unity",
         "score": 20,
-        "image": "img/skillIcons/software/icons8-unity.svg",
-        "description": "testText"
+        "image": "img/skillIcons/software/icons8-unity.svg",        
+        "description": "testText description"
       },
       {
         "name": "Visual Studio Code",
         "score": 85,
         "image": "img/skillIcons/software/icons8-visual-studio-code.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "Visual Studio Comunity",
         "score": 65,
         "image": "img/skillIcons/software/icons8-visual-studio.svg",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "Github",
         "score": 75,
         "image": "img/logos/github-mark/github-mark-white.svg",
-        "description": "testText"
+        "description": "testText description"
       }
     ]
   },
@@ -80,15 +80,15 @@
     "data": [
       {
         "name": "Communication",
-        "score": 50,
+        "score": 45,
         "image": "img/skillIcons/others/icons8-talk-64.png",
-        "description": "testText"
+        "description": "testText description"
       },
       {
         "name": "Problem solving",
         "score": 75,
         "image": "img/skillIcons/others/icons8-problem-solving-64.png",
-        "description": "testText"
+        "description": "testText description"
       }
     ]
   }
