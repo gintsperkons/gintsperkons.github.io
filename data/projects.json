@@ -19,6 +19,8 @@
       "binary": "https://mega.nz/folder/ceQCBA6T#N2AyNnWUgDzazaYxbaYBaw/file/JDxCXJrA"
     },
     "pageContent": {
+      "imageLink": "/img/main/defyingGravity.png",
+      "imageLinkFull": "https://drive.google.com/uc?export=view&id=1jlE3oNt43bCOlKYALWK0bCo1BmaJw1xn",
       "description": "Defying Gravity is a game prototype developed in Unreal Engine and was made for a year-long project at the university. It is a simple platformer with levels right now one and some physics. There is an ability to climb a wall if the wall is low enough and if you decide to jump off the map you will be returned to level start. There is also the ability to pick up coins although it only makes the number go up."
     }
   },
@@ -90,7 +92,13 @@
       "Java Swing",
       "Ecplise IDE"
     ],
-    "pageContent": {}
+    "pageContent": {
+      "imageLink": "/img/main/snakeGame.png",
+      "imageLinkFull": "https://drive.google.com/uc?export=view&id=1oWlv61bH7WGWWg2pDTXnfMcrXWmnZ3oR",
+      "description": ""
+      
+
+    }
   },
   "template": {
     "template": "",
