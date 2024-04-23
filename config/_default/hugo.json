@@ -3,5 +3,17 @@
   "languageCode": "en-us",
   "title": "Gints Portfolio",
   "params": {
+    "icons": {
+      "github-dark": "/img/github-mark/github-mark-white.svg",
+      "github-light": "/img/github-mark/github-mark.svg",
+      "visual studio code-dark": "/img/icons/skills/vscode.svg",
+      "visual studio code-light": "/img/icons/skills/vscode.svg",
+      "visual studio community-dark": "/img/icons/skills/visual-studio-svgrepo-com.svg",
+      "visual studio community-light": "/img/icons/skills/visual-studio-svgrepo-com.svg",
+      "unreal engine-dark": "/img/icons/skills/unrealEngine.svg",
+      "unreal engine-light": "/img/icons/skills/unrealEngine.svg",
+      "unity-dark": "/img/icons/skills/unity-svgrepo-com.svg",
+      "unity-light": "/img/icons/skills/unity-svgrepo-com.svg"
+    }
   }
 }

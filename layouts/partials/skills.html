@@ -1,5 +1,6 @@
 <div id="skills_TabContent" class="tabContent">
 
+    {{$icons := .context.Site.Params.icons}}
     {{range sort .context.Site.Data.skills ".name" "desc" }}
     <div class="skillColumn">
         <div class="skillTitle">
@@ -9,8 +10,9 @@
             {{range sort .data ".score" "desc"}}
             <div class="skill">
                 <div class="skillMain">
-                    <img class="skillImg" src="{{.image}}" alt="{{.image}}"
-                        onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">
+                    {{$iconNameDark :=print "-dark"| print  .name|lower}}
+                    {{$iconNameLight :=print "-light"| print .name|lower}}
+                    {{partial "image" (dict "context" . "imageLight" $iconNameLight "imageDark" $iconNameDark "icons" $icons "class" "skillImg")}}
                     <div class="skillData">
                         <div class="skillName">{{.name}}</div>
                         <div class="skillScore"><div class="bar">{{.score}}</div></div>
