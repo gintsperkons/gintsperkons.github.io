@@ -51,14 +51,14 @@
       },
       {
         "name": "Unity",
-        "score": 20,
+        "score": 35,
         "image": "img/skillIcons/software/icons8-unity.svg",        
         "description": "testText description"
       },
       {
         "name": "Visual Studio Code",
         "score": 85,
-        "image": "img/skillIcons/software/icons8-visual-studio-code.svg",
+        "image": "/img/icons/skills/vscode.svg",
         "description": "testText description"
       },
       {

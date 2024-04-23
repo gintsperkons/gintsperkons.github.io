@@ -1,0 +1,44 @@
+.personalLink
+    height: 75px
+
+.personalLink:hover
+    height: 80px
+
+#about_TabContent
+    width: 100%
+    flex-direction: column
+    justify-content: center
+
+.links
+    height: 100px
+    padding: 20px 10px 10px 10px
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: center
+
+.aboutContent
+    padding: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    text-align: center
+    font-size: clamp(1.5em, 3vw, 2em)
+    font-weight: bold
+
+.link
+    padding: 0px 10px  0px 10px
+
+.theme-dark > * .linkDark
+    display: none
+
+.theme-dark > * .linkLight
+    display: flex
+
+.theme-light > * .linkDark
+    display: flex
+
+.theme-light > * .linkLight
+    display: none

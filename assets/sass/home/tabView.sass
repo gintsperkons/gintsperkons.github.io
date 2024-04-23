@@ -1,0 +1,32 @@
+.tabTitle
+    user-select: none
+    cursor: pointer
+    padding: 10px
+    width: 100%
+    text-align: center
+    font-size: clamp(1.5em, 3vw, 2em)
+    background-color: var(--secondary-color)
+    border: 1px solid var(--primary-color)
+    border-radius: 40px 40px 0 0
+    transition: all .5s
+
+#tabViewTitles
+    display: flex
+    justify-content: space-around
+    align-items: end    
+    height: 80px
+
+.tabTitle:hover
+    font-size: clamp(1.8em, 3.3vw, 2.3em)
+    filter: brightness(1.1)
+
+.tabTitle.active
+    background-color: var(--primary-color)
+    font-weight: bold
+
+.tabContent.active
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+.tabContent
+    display: none

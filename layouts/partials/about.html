@@ -1,0 +1,18 @@
+<div id="about_TabContent" class="tabContent">
+    <div class="links">
+        {{$links := .context.Site.Data.links}}
+        {{range $links}}
+        <a href="{{.url}}" class="linkDark link" target="_blank">
+            <img class="personalLink" src="{{.imageDark}}" alt="">
+        </a>
+        <a href="{{.url}}" class="linkLight link" target="_blank">
+            <img class="personalLink" src="{{.imageLight}}" alt="">
+        </a>
+        {{end}}
+    </div>
+    {{$about := .context.Site.Data.about}}
+    <div class="aboutContent">
+        {{$about.description}}
+    </div>
+
+</div>

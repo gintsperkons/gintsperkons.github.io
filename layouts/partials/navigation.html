@@ -1,7 +1,0 @@
-<div id="navigationMenu">
-    <div id="navigationItems">
-        {{ range sort .Site.Params.Navigation "weight" "asc"}}
-        <div class="navElement"><a href="{{.url}}">{{.title}}</a></div>
-        {{ end }}
-    </div>
-</div>

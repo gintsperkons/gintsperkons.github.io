@@ -1,7 +1,4 @@
 <div id="header">
-    <div id="headerTop">
-        <h1 id="pageTitle">{{.Params.pageTitle}}</h1>
-        {{partial "hamburgerIcon.html" .}}
-    </div>
-        {{partial "navigation.html" .}}
+    <h1>{{ .context.Params.pageTitle }}</h1>
+    {{partial "themeToggle" (dict "context" .)}}
 </div>

@@ -1,0 +1,26 @@
+<div id="skills_TabContent" class="tabContent">
+
+    {{range sort .context.Site.Data.skills ".name" "desc" }}
+    <div class="skillColumn">
+        <div class="skillTitle">
+            <h3>{{.name}}</h3>
+        </div>
+        <div class="skillList">
+            {{range sort .data ".score" "desc"}}
+            <div class="skill">
+                <div class="skillMain">
+                    <img class="skillImg" src="{{.image}}" alt="{{.image}}"
+                        onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">
+                    <div class="skillData">
+                        <div class="skillName">{{.name}}</div>
+                        <div class="skillScore"><div class="bar">{{.score}}</div></div>
+                    </div>
+                </div>
+
+                <div class="skillDescription">{{.description}}</div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+    {{ end }}
+</div>

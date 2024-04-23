@@ -1,71 +1,129 @@
 {
   "defyingGravity": {
-    "name": "Defying Gravity",
-    "image": "/img/thumbnails/definingGravityThumbnail.png",
+    "complete": true,
+    "title": "Defying Gravity",
+    "thumbnail": "/img/projects/thumbnails/definingGravityThumbnail.png",
     "descriptionShort": "Defying Gravity is a game prototype developed in Unreal Engine and was made for a year-long project at the university. It is a simple platformer with levels right now one and some physics.",
-    "description": "Defying Gravity is a game prototype developed in Unreal Engine and was made for a year-long project at the university. It is a simple platformer with levels right now one and some physics. There is an ability to climb a wall if the wall is low enough and if you decide to jump off the map you will be returned to level start. There is also the ability to pick up coins although it only makes the number go up.",
-
     "type": "Game",
+    "platform": "Windows",
     "time": "2023.Q2",
     "projectPage": "/projects/defyinggravity/",
+    "technologies": [
+      "Blender",
+      "Unreal Engine 4",
+      "Blueprints"
+    ],
     "repository": {
       "type": "mega",
-      "url": "https://mega.nz/folder/ceQCBA6T#N2AyNnWUgDzazaYxbaYBaw"
+      "sourceCode": "https://mega.nz/folder/ceQCBA6T#N2AyNnWUgDzazaYxbaYBaw/folder/FboEjTTK",
+      "binary": "https://mega.nz/folder/ceQCBA6T#N2AyNnWUgDzazaYxbaYBaw/file/JDxCXJrA"
+    },
+    "pageContent": {
+      "description": "Defying Gravity is a game prototype developed in Unreal Engine and was made for a year-long project at the university. It is a simple platformer with levels right now one and some physics. There is an ability to climb a wall if the wall is low enough and if you decide to jump off the map you will be returned to level start. There is also the ability to pick up coins although it only makes the number go up."
     }
   },
   "teachTyping": {
-    "name": "Teach Typing",
-    "image": "/img/thumbnails/teachTypingThumbnail.png",
+    "title": "Teach Typing",
+    "thumbnail": "/img/projects/thumbnails/teachTypingThumbnail.png",
     "descriptionShort": "Teach Typing is a typing game prototype project developed as university course final work. It uses PHP and MYSQL database to make it unique for a user. It has lessons and each lesson you type text seen on screen and if you make a mistake you can correct it, but it will know that you corrected it. When the lesson is finished it shows all information about how you did and saves it to the database.",
     "type": "Web",
     "platform": "Web",
+    "finnished": true,
     "time": "2023.Q2",
     "projectPage": "/projects/teachtyping/",
-    "tech": "PHP, MYSQL, HTML, CSS, JavaScript",
+    "repository": {
+      "type": "github",
+      "sourceCode": "https://github.com/gintsperkons/TeachTyping"
+    },
+    "technologies": [
+      "PHP",
+      "MYSQL",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "complete": true,
     "pageContent": {
       "imageLink": "/img/main/teachTyping.png",
-      "imageLinkFull":"https://drive.google.com/uc?export=view&id=1ktimnt1PBCEHkJ9Keo36NvpY463mzSEg",
+      "imageLinkFull": "https://drive.google.com/uc?export=view&id=1ktimnt1PBCEHkJ9Keo36NvpY463mzSEg",
       "description": "This project was developed for university course final work where we needed to develop some kind of website. We were 2 people I was mainly responsible for PHP and database interactions and some JS while the other person was mainly doing CSS styling and web design. The project is just a simple lesson list with basic statistics about each lesson completed.",
-      "repository": {
-        "type": "github",
-        "url": "https://github.com/gintsperkons/TeachTyping"
-      },
       "content": [
         {
           "imageLink": "/img/gifs/TeachTypingClipLQ1.gif",
-          "imageLinkFull":"https://drive.google.com/uc?export=view&id=1lcivcNzqLxCZ97If5TDq467v9iU7PmzK",
+          "imageLinkFull": "https://drive.google.com/uc?export=view&id=1lcivcNzqLxCZ97If5TDq467v9iU7PmzK",
           "description": "Lessons can be divided into subsections to split apart different stages of learning or themes."
         },
         {
           "imageLink": "/img/gifs/TeachTypingClipLQ2.gif",
-          "imageLinkFull":"https://drive.google.com/uc?export=view&id=11T78mSL5s3LaUp3e_O8dpAJDu18bhvru",
+          "imageLinkFull": "https://drive.google.com/uc?export=view&id=11T78mSL5s3LaUp3e_O8dpAJDu18bhvru",
           "description": "When signing up the user is created and the password is hashed so it doesn’t store in plain text. On login, the password is hashed and checked against the database saved string and if they are the same then the user access key is generated and saved as a cookie so the website doesn’t need to ask for login all the time."
         },
         {
           "imageLink": "/img/gifs/TeachTypingClipLQ3.gif",
-          "imageLinkFull":"https://drive.google.com/uc?export=view&id=11T78mSL5s3LaUp3e_O8dpAJDu18bhvru",
+          "imageLinkFull": "https://drive.google.com/uc?export=view&id=11T78mSL5s3LaUp3e_O8dpAJDu18bhvru",
           "description": "In lesson if you make a mistake it is marked red with the help of class names and if you correct the mistake it is yellow. After the lesson, it calculates using class names assigned to characters to determine your accuracy with corrected as green(correct) and actual accuracy which is still counting corrected as mistakes."
         },
         {
           "imageLink": "/img/gifs/TeachTypingClipLQ4.gif",
-          "imageLinkFull":"https://drive.google.com/uc?export=view&id=1UOEhox4VuDzpI7dKWe7ALCOzZUVGAvzQ",
+          "imageLinkFull": "https://drive.google.com/uc?export=view&id=1UOEhox4VuDzpI7dKWe7ALCOzZUVGAvzQ",
           "description": "The resulting statistics are shown at the end of the lesson right next to the words per minute counter and saved in the database. After completing the lesson and going back to the home screen your statistics are shown on the lesson card. They are retrieved from the database using username and lesson number."
         }
       ]
     }
   },
   "snakeGame": {
-    "name": "SnakeGame",
-    "image": "/img/thumbnails/snakeGameThumbnail.png",
+    "complete": true,
+    "title": "SnakeGame",
+    "thumbnail": "/img/projects/thumbnails/snakeGameThumbnail.png",
     "descriptionShort": "Snake game is a clone game of popular game snake made in Java using Swing GUI widget toolkit for Java.",
-    "description": "Snake game is a clone game of popular game snake made in Java using Swing GUI widget toolkit for Java.",
     "type": "Game",
+    "platform": "Windows",
     "time": "2022.Q2",
     "projectPage": "/projects/snakegame/",
     "repository": {
       "type": "github",
-      "url": "https://github.com/gintsperkons/SnakeGame"
+      "sourceCode": "https://github.com/gintsperkons/SnakeGame",
+      "binary": "https://github.com/gintsperkons/SnakeGame/releases"
+    },
+    "technologies": [
+      "Java",
+      "Java Swing",
+      "Ecplise IDE"
+    ],
+    "pageContent": {}
+  },
+  "template": {
+    "template": "",
+    "complete": true,
+    "title": "Teach Typing",
+    "thumbnail": "/img/projects/thumbnails/teachTypingThumbnail.png",
+    "descriptionShort": "short description here",
+    "type": "Website or Game or ...",
+    "platform": "Web or PC or ...",
+    "time": "2023.Q2 finished time here",
+    "projectPage": "/projects/teachtyping/",
+    "repository": {
+      "type": "github",
+      "sourceCode": "",
+      "binary": "",
+      "playable": ""
+    },
+    "technologies": [
+      "technology1",
+      "technology2",
+      "technology3"
+    ],
+    "pageContent": {
+      "imageLink": "/img/main/teachTyping.png",
+      "imageLinkFull": "https://drive.google.com/uc?export=view&id=1ktimnt1PBCEHkJ9Keo36NvpY463mzSEg",
+      "description": "projectDescriptionTextHere",
+      "content": [
+        {
+          "imageLink": "/img/gifs/TeachTypingClipLQ1.gif",
+          "imageLinkFull": "https://drive.google.com/uc?export=view&id=1lcivcNzqLxCZ97If5TDq467v9iU7PmzK",
+          "description": "descriptionTextForImage"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,13 @@
+<div class="tabView">
+    <div id="tabViewTitles">
+        {{partial "tabTitle" (dict "context" .context "tabTitle" "About")}}
+        {{partial "tabTitle" (dict "context" .context "tabTitle" "Projects")}}
+        {{partial "tabTitle" (dict "context" .context "tabTitle" "Skills")}}
+    </div>
+    <div id="tabViewContent">
+        {{partial "about" (dict "context" .context )}}
+        {{partial "projects" (dict "context" .context )}}
+        {{partial "skills" (dict "context" .context )}}
+    </div>
+</div>
+
