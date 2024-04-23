@@ -1,4 +1,8 @@
 <div id="header">
+    {{ if eq "/" $.context.RelPermalink}}
+    {{else}}
+    <div><a href="/"><img class="backButton" src="/img/icons/back-svgrepo-com.svg" alt=""></a></div>
+    {{end}}
     <h1>{{ .context.Params.pageTitle }}</h1>
     {{partial "themeToggle" (dict "context" .)}}
 </div>

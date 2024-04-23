@@ -16,6 +16,7 @@
     <title>{{.Params.Title}}</title>
 </head>
 <body id="body" class="theme-light">
+    {{partial "header" (dict "context" .)}}
     {{block "body" .}}
     {{ end }}
     

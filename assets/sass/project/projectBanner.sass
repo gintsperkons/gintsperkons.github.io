@@ -1,0 +1,35 @@
+#mainImage
+    width: 100%
+
+#topContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+#topImageCont
+    width: 50%
+    
+#topItems
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: row
+#topItems > * .projectLinkImg
+    width: 100px
+
+.imageLeft
+    display: flex
+    padding: 10px 10px 10px 10px
+
+.imageLeft.even > .imageDescription
+    padding: 0 0 0 10px
+
+.imageLeft.even
+    flex-direction: row
+
+.imageLeft.odd
+    flex-direction: row-reverse
+
+.imageLeft.odd > .imageDescription
+    padding: 0 10px 0 0

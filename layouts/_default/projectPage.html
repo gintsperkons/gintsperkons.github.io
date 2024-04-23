@@ -1,11 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectPage</title>
-</head>
-<body>
-    
-</body>
-</html>
+{{define "head"}}
+{{ $css := resources.Get "sass/project.sass" | resources.ToCSS}}
+<link rel="stylesheet" href="{{$css.RelPermalink}}" />
+<title>{{.Site.Title}}</title>
+{{end}}
+
+{{define "scripts"}}
+{{end}}
+
+
+
+
+{{define "body"}}
+<div class="content">
+    {{ $icons := .Site.Params.Icons}}
+    {{range .Site.Data.projects}}
+    {{ if eq .projectPage $.RelPermalink}}
+    {{partial "projectTopContainer.html" (dict "context" . "icons" $icons)}}
+    {{partial "projectContent.html" .}}
+        
+    {{end}}
+    {{ end }}
+</div>
+{{end}}
