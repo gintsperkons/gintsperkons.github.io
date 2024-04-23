@@ -13,7 +13,23 @@
       "unreal engine-dark": "/img/icons/skills/unrealEngine.svg",
       "unreal engine-light": "/img/icons/skills/unrealEngine.svg",
       "unity-dark": "/img/icons/skills/unity-svgrepo-com.svg",
-      "unity-light": "/img/icons/skills/unity-svgrepo-com.svg"
+      "unity-light": "/img/icons/skills/unity-svgrepo-com.svg",
+      "python-dark": "/img/icons/skills/python-logo-only.svg",
+      "python-light": "/img/icons/skills/python-logo-only.svg",
+      "c++-dark": "/img/icons/skills/cpp_logo.svg",
+      "c++-light": "/img/icons/skills/cpp_logo.svg",
+      "java-dark": "/img/icons/skills/java-svgrepo-com.svg",
+      "java-light": "/img/icons/skills/java-svgrepo-com.svg",
+      "php-dark": "/img/icons/skills/php-svgrepo-com.svg",
+      "php-light": "/img/icons/skills/php-svgrepo-com.svg",
+      "javascript-dark": "/img/icons/skills/javascript-svgrepo-com.svg",
+      "javascript-light": "/img/icons/skills/javascript-svgrepo-com.svg",
+      "sql-dark": "/img/icons/skills/sql-database-generic-svgrepo-com.svg",
+      "sql-light": "/img/icons/skills/sql-database-generic-svgrepo-com.svg",
+      "problem solving-dark": "/img/icons/skills/creativity-think-svgrepo-com.svg",
+      "problem solving-light": "/img/icons/skills/creativity-think-svgrepo-com.svg",
+      "communication-dark": "/img/icons/skills/communication-between-users-svgrepo-com.svg",
+      "communication-light": "/img/icons/skills/communication-between-users-svgrepo-com.svg"
     }
   }
 }
