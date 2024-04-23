@@ -10,13 +10,13 @@
       },
       {
         "name": "C++",
-        "score": 60,
+        "score": 65,
         "image": "img/skillIcons/programming/icons8-cpp.svg",
         "description": "testText description"
       },
       {
         "name": "SQL",
-        "score": 35,
+        "score": 30,
         "image": "img/skillIcons/programming/icons8-sql-48.png",
         "description": "testText description"
       },
