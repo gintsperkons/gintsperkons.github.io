@@ -1,3 +1,9 @@
+{{define "scripts"}}
+<script src="/js/skillsBar.js" > </script>
+<script src="/js/filterProjects.js" >  </script>
+<script src="/js/tabView.js" >  </script>
+{{end}}
+
 {{define "body"}}
 {{partial "header" (dict "context" .)}}
 {{partial "tabView" (dict "context" .)}}
@@ -9,8 +15,3 @@
 <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
 
-{{define "scripts"}}
-<script src="/js/skillsBar.js" />
-<script src="/js/filterProjects.js" /> 
-<script src="/js/tabView.js" /> 
-{{ end }}
