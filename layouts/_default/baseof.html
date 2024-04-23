@@ -18,8 +18,8 @@
 <body id="body" class="theme-light">
     {{block "body" .}}
     {{ end }}
+    <script src="/js/theme.js"></script>
+    {{block "scripts" . }}
+    {{ end }}
 </body>
-<script src="/js/theme.js"></script>
-{{block "scripts" . }}
-{{ end }}
 </html>
