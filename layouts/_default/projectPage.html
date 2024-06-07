@@ -1,24 +1,19 @@
-{{define "head"}}
-{{ $css := resources.Get "sass/project.sass" | resources.ToCSS}}
-<link rel="stylesheet" href="{{$css.RelPermalink}}" />
-<title>{{.Site.Title}}</title>
+
+{{ define "main" }}
+
+{{ partial "projectPageTop" . }}
+{{ partial "projectPageBottom" . }}
+
+{{ end }}
+
+{{ define "scripts" }}
+
 {{end}}
 
-{{define "scripts"}}
-{{end}}
-
-
-
-
-{{define "body"}}
-<div class="content">
-    {{ $icons := .Site.Params.Icons}}
-    {{range .Site.Data.projects}}
-    {{ if eq .projectPage $.RelPermalink}}
-    {{partial "projectTopContainer.html" (dict "context" . "icons" $icons)}}
-    {{partial "projectContent.html" .}}
-        
-    {{end}}
-    {{ end }}
-</div>
-{{end}}
+{{ define "head" }}
+<link rel="stylesheet" href="/css/projectPage/links.css">
+<link rel="stylesheet" href="/css/projectPage/center.css">
+<link rel="stylesheet" href="/css/projectPage/leftInfo.css">
+<link rel="stylesheet" href="/css/projectPage/base.css">
+<link rel="stylesheet" href="/css/projectPage/list.css">
+{{ end }}

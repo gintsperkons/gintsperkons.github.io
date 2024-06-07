@@ -1,0 +1,35 @@
+{{ $project := index .Site.Data.projects .Params.projectId }}
+<div id="topCont">
+    <div id="Top">
+        <div id="topLeft">
+            <div class="technologies">
+                {{range $project.technologies}}
+                <div class="technology">{{.}}</div>
+                {{end}}
+            </div>
+            <div class="platform">{{$project.platform}}</div>
+            <div class="time">{{$project.time}}</div>
+            <div class="type">{{$project.type}}</div>
+        </div>
+        <div id="mainImage">
+            <img src="{{$project.pageContent.topImage}}" alt="{{$project.title}} MainImage">
+        </div>
+        <div id="topRight">
+            <div class="projectLinks">
+                {{with $project.repository.playable}}
+                <a href="{{.}}" class="projectLinkPlayable" target="_blank"><img class="projectLinkImg"
+                        src="/img/icons/game-9-svgrepo-com.svg" alt="Playable"></a>
+                {{end}}
+                {{with $project.repository.sourceCode}}
+                <a href="{{.}}" class="projectLinkSource" target="_blank"><img class="projectLinkImg"
+                        src="/img/icons/code-svgrepo-com.svg" alt="Code"></a>
+                {{end}}
+                {{with $project.repository.binary}}
+                <a href="{{.}}" class="projectLinkBinaries" target="_blank"><img class="projectLinkImg"
+                        src="/img/icons/file-exe-svgrepo-com.svg" alt="Binary"></a>
+                {{end}}
+            </div>
+        </div>
+    </div>
+    <div id="description">{{$project.pageContent.mainDescription}}</div>
+</div>

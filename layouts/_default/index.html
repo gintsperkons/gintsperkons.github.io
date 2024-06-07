@@ -1,0 +1,20 @@
+{{define "scripts"}}
+<script src="/js/skillsBar.js" > </script>
+<script src="/js/filterProjects.js" >  </script>
+<script src="/js/tabView.js" >  </script>
+{{end}}
+
+{{define "head"}}
+<link rel="stylesheet" href="css/home/tabs.css">
+<link rel="stylesheet" href="css/home/skills.css">
+<link rel="stylesheet" href="css/home/about.css">
+<link rel="stylesheet" href="css/home/projects.css">
+{{ end }}
+
+{{define "main"}}
+
+{{partial "tabView" (dict "context" .)}}
+{{ end }}
+
+
+

@@ -1,0 +1,25 @@
+{{ $project := index .Site.Data.projects .Params.projectId }}
+<div id="content">
+    {{ $id := 0}}
+    {{with $project.pageContent.content }}
+
+    {{range $index, $element := $project.pageContent.content}}
+    {{ $value := mod $index 2 }}
+    {{ if eq $value 0 }}
+    <div class="listElement even">
+        {{else}}
+        <div class="listElement odd">
+            {{ end }}
+            <a href="{{$element.imageLinkFull}}">
+                <img class="projectListImage" src='{{$element.imageLink}}' alt=""
+                    onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">
+            </a>
+            <div class="description">
+                <p>
+                {{$element.description}}
+            </p>
+            </div>
+        </div>
+        {{ end }}
+        {{end}}
+    </div>

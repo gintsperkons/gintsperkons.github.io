@@ -1,0 +1,9 @@
+.projectLinkImg {
+    width:100px;
+}
+.projectLinks {
+    display:flex;
+    flex-direction:column;
+    padding-top: 100px;
+    justify-content:flex-start;
+}

@@ -1,4 +1,4 @@
-let bodyElmt = document.getElementById("body")
+let bodyElmt = document.getElementsByTagName("body")[0]
 
 
 const changeTheme = (theme) => {

@@ -1,8 +1,13 @@
 <div id="header">
-    {{ if eq "/" $.context.RelPermalink}}
-    {{else}}
-    <div><a href="/"><img class="backButton" src="/img/icons/back-svgrepo-com.svg" alt=""></a></div>
-    {{end}}
-    <h1>{{ .context.Params.pageTitle }}</h1>
-    {{partial "themeToggle" (dict "context" .)}}
+    {{ if .context.Params.subPage }}
+        <div id="headerBackButton"><svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+            <path d="M15 6L9 12L15 18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></div>
+    {{ end }}
+    <div id="subHeader">
+    <h1 id="pageTitle">
+        {{.context.Params.pageHeading}}
+    </h1>
+    {{partial "themeToggle" (dict "context" .context)}}
+</div>
 </div>

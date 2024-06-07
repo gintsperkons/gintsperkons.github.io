@@ -1,11 +1,7 @@
 {
-    "pageTitle": "Teach Typing",
-
-
-    "title": "Gints Portfolio| Teach Typing",
-    "layout" : "projectPage"
-    
-
-
-
+"title": "Hello World",
+"pageHeading":"Snake Game",
+"projectId":"snakeGame",
+"layout":"projectPage",
+"subPage":"true"
 }

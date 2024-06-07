@@ -1,0 +1,61 @@
+{
+    "baseURL": "https://gintsperkons.github.io/",
+    "languageCode": "en-us",
+    "title": "Gints Portfolio",
+    "params": {
+        "icons": {
+            "github": {
+                "dark": "/img/github-mark/github-mark-white.svg",
+                "light": "/img/github-mark/github-mark.svg"
+            },
+            "vscode": {
+                "dark": "/img/icons/skills/vscode.svg",
+                "light": "/img/icons/skills/vscode.svg"
+            },
+            "vscommunity": {
+                "dark": "/img/icons/skills/visual-studio-svgrepo-com.svg",
+                "light": "/img/icons/skills/visual-studio-svgrepo-com.svg"
+            },
+            "unrealengine": {
+                "dark": "/img/icons/skills/UE-Icon-2023-White.svg",
+                "light": "/img/icons/skills/UE-Icon-2023-Black.svg"
+            },
+            "unity": {
+                "dark": "/img/icons/skills/U_Cube_1C_White.svg",
+                "light": "/img/icons/skills/U_Cube_1C_Black.svg"
+            },
+            "cpp": {
+                "dark": "/img/icons/skills/cpp_logo.svg",
+                "light": "/img/icons/skills/cpp_logo.svg"
+            },
+            "python": {
+                "dark": "/img/icons/skills/python-logo-only.svg",
+                "light": "/img/icons/skills/python-logo-only.svg"
+            },
+            "php": {
+                "dark": "/img/icons/skills/php-svgrepo-com.svg",
+                "light": "/img/icons/skills/php-svgrepo-com.svg"
+            },
+            "javascript": {
+                "dark": "/img/icons/skills/javascript-svgrepo-com.svg",
+                "light": "/img/icons/skills/javascript-svgrepo-com.svg"
+            },
+            "java": {
+                "dark": "/img/icons/skills/java-svgrepo-com.svg",
+                "light": "/img/icons/skills/java-svgrepo-com.svg"
+            },
+            "sql": {
+                "dark": "/img/icons/skills/sql-database-generic-svgrepo-com.svg",
+                "light": "/img/icons/skills/sql-database-generic-svgrepo-com.svg"
+            },
+            "communication": {
+                "dark": "/img/icons/skills/conversation-svgrepo-com.svg",
+                "light": "/img/icons/skills/conversation-svgrepo-com.svg"
+            },
+            "problemsolving": {
+                "dark": "/img/icons/skills/cog-svgrepo-com.svg",
+                "light": "/img/icons/skills/cog-svgrepo-com.svg"
+            }
+        }
+    }
+}

@@ -1,24 +1,5 @@
 <div id="projects_TabContent" class="tabContent">
-    <div class="filter">
-        <div class="filterTitle">Filter type</div>
-        <div class="filterDropDown">
-            <select id="filterSelectType" class="filterSelect" onchange="filterProjects()">
-                <option value="all">All</option>
-                {{ $InFilter := slice }}
-                {{range .context.Site.Data.projects}}
-                {{if eq .template ""}}
-                {{else}}
-                {{ if not (in $InFilter .type)}}
-                <option value="{{.type}}">{{.type}}</option>
-                {{ $InFilter = $InFilter | append .type }}
-                {{ end }}
-                {{end}}
-                {{end}}
-            </select>
-        </div>
-    </div>
-
-    {{range sort .context.Site.Data.projects ".time" "desc" }}
+    {{range sort .context.Site.Data.projects ".pageSequence" "asc" }}
     {{if eq .template ""}}
     {{else}}
     <div class="project" filterType="{{.type}}">
@@ -43,27 +24,10 @@
                             src="/img/icons/file-exe-svgrepo-com.svg" alt="Binary"></a>
                     {{end}}
                 </div>
-                <div class="projectMakeInfo">
-                    <div class="projectType">{{.type}}</div>
-                    <div class="projectTime">{{.time}}</div>
-                    {{with .complete}}
-                    {{if .}}
-                    <div class="projectCompletion">Complete</div>
-                    {{else}}
-                    <div class="projectCompletion">Working</div>
-                    {{end}}
-                    {{end}}
-                </div>
             </div>
             <div class="projectDataBottom">
-                <div class="projectTechnologies">
-                    {{range .technologies}}
-                    <div class="projectTechnology">{{.}}</div>
-                    {{end}}
-                </div>
-                <div class="projectDescription">{{.descriptionShort}}</div>
+                <div class="projectDescription">{{.pitchDescription}}</div>
             </div>
-
         </div>
 
 

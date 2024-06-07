@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    {{ $sass := resources.Get "sass/global.sass" }}
-    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global/base.css">
+    <link rel="stylesheet" href="/css/global/header.css">
+    <link rel="stylesheet" href="/css/global/themeToggle.css">
+    <link rel="stylesheet" href="/css/global/themeImages.css">
     {{block "head" .}}
     {{ end }}
-    <title>{{.Params.Title}}</title>
+
+    <title>
+        {{ block "title" .}}
+        {{.Site.Title}}
+        {{end}}
+    </title>
 </head>
-<body id="body" class="theme-light">
+
+<body class="theme-dark">
     {{partial "header" (dict "context" .)}}
-    {{block "body" .}}
-    {{ end }}
-    
+    {{ block "main" .}}
+    <!-- Default value -->
+    <div>Body Not overridden...</div>
+    {{ end}}
+
+
     <script src="/js/theme.js"> </script>
+    <script src="/js/backBtn.js"> </script>
     {{block "scripts" .}}
     {{ end }}
 </body>
+
 </html>

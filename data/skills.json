@@ -4,39 +4,45 @@
     "data": [
       {
         "name": "Python",
-        "score": 83,
-        "image": "img/skillIcons/programming/icons8-python.svg",
-        "description": "testText description"
+        "score": 68,
+        "image": "/img/skillIcons/programming/icons8-python.svg",
+        "description": "testText description",
+        "imageName":"python"
       },
       {
         "name": "C++",
-        "score": 65,
-        "image": "img/skillIcons/programming/icons8-cpp.svg",
-        "description": "testText description"
+        "score": 59,
+        "image": "/img/skillIcons/programming/icons8-cpp.svg",
+        "description": "testText description",
+        "imageName":"cpp"
       },
       {
         "name": "SQL",
-        "score": 30,
+        "score": 31,
         "image": "img/skillIcons/programming/icons8-sql-48.png",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"sql"
       },
       {
         "name": "JavaScript",
-        "score": 65,
+        "score": 53,
         "image": "img/skillIcons/programming/icons8-javascript.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"javascript"
       },
       {
         "name": "Java",
-        "score": 50,
+        "score": 41,
         "image": "img/skillIcons/programming/icons8-java.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"java"
       },
       {
         "name": "PHP",
         "score": 55,
         "image": "img/skillIcons/programming/icons8-php-logo.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"php"
       }
     ]
   },
@@ -45,33 +51,38 @@
     "data": [
       {
         "name": "Unreal Engine",
-        "score": 55,
+        "score": 45,
         "image": "img/skillIcons/software/icons8-unreal-engine.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"unrealengine"
       },
       {
         "name": "Unity",
         "score": 35,
         "image": "img/skillIcons/software/icons8-unity.svg",        
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"unity"
       },
       {
         "name": "Visual Studio Code",
-        "score": 85,
+        "score": 75,
         "image": "/img/icons/skills/vscode.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"vscode"
       },
       {
-        "name": "Visual Studio Community",
-        "score": 65,
+        "name": "Visual Studio Comunity",
+        "score": 58,
         "image": "img/skillIcons/software/icons8-visual-studio.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"vscommunity"
       },
       {
         "name": "Github",
-        "score": 75,
+        "score": 61,
         "image": "img/logos/github-mark/github-mark-white.svg",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"github"
       }
     ]
   },
@@ -80,15 +91,17 @@
     "data": [
       {
         "name": "Communication",
-        "score": 45,
+        "score": 47,
         "image": "img/skillIcons/others/icons8-talk-64.png",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"communication"
       },
       {
         "name": "Problem solving",
-        "score": 75,
+        "score": 65,
         "image": "img/skillIcons/others/icons8-problem-solving-64.png",
-        "description": "testText description"
+        "description": "testText description",
+        "imageName":"problemsolving"
       }
     ]
   }

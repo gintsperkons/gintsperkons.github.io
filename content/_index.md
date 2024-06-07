@@ -1,7 +1,4 @@
 {
-    "pageTitle": "Gints",
-
-
-    "title": "Gints Portfolio",
-    "layout" : "home"
+"title": "Hello World",
+"pageHeading":"Gints Kristaps Pērkons"
 }

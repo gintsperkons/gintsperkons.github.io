@@ -1,0 +1,12 @@
+<div class="iconContainer">
+    
+    <img class="darkThemeImage {{.class}}" src='{{ index .context.Site.Params.icons .iconName "dark" }}' alt="{{.alt}}"
+    onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">
+    <img class="lightThemeImage {{.class}}" src='{{ index .context.Site.Params.icons .iconName "light" }}' alt="{{.alt}}"
+    onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">  
+    
+    {{/*  <img class="darkThemeImage {{.class}}" src="{{index .context .imageDark}}" alt="{{.alt}}"
+    onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">
+    <img class="lightThemeImage {{.class}}" src="{{index .icons .imageLight}}" alt="{{.alt}}"
+    onerror="this.onerror=null; this.src='/img/icons/image-landscape-picture-image-icon-svgrepo-com.svg'">  */}}
+</div>

@@ -1,0 +1,49 @@
+.listElement {
+    display: flex;
+}
+
+.listElement > .description {
+    align-self: center;
+    text-align: justify;
+    width: 50%;
+    cursor: default;
+}
+
+.listElement.even {
+
+    flex-direction: row;
+}
+
+
+.listElement.odd {
+    flex-direction: row-reverse;
+}
+
+.projectListImage {
+    padding: 5px 5px 5px 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.listElement > a {
+    width: clamp(500px, 100%, 1000px);
+}
+
+@media (max-width: 850px) {
+    .listElement.even {
+
+        flex-direction: column;
+    }
+    
+    
+    .listElement.odd {
+        flex-direction: column;
+    }
+    .listElement {
+        padding-bottom: 20px;
+    }
+
+    .listElement > .description {
+        width: 100%;
+    }
+}
