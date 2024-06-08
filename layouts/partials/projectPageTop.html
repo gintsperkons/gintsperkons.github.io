@@ -4,15 +4,19 @@
         <div id="topLeft">
             <div class="technologies">
                 {{range $project.technologies}}
-                <div class="technology">{{.}}</div>
+                <div class="technology"><p>{{.}}</p></div>
                 {{end}}
             </div>
-            <div class="platform">{{$project.platform}}</div>
-            <div class="time">{{$project.time}}</div>
-            <div class="type">{{$project.type}}</div>
+            <div class="otherInfo">
+            <div class="platform"><p>{{$project.platform}}</p></div>
+            <div class="time"><p>{{$project.time}}</p></div>
+            <div class="type"><p>{{$project.type}}</p></div>
+            </div>
         </div>
         <div id="mainImage">
+            <a href="{{$project.pageContent.topImageFull}}">
             <img src="{{$project.pageContent.topImage}}" alt="{{$project.title}} MainImage">
+            </a>
         </div>
         <div id="topRight">
             <div class="projectLinks">
