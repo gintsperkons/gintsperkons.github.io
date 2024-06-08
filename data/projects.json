@@ -21,7 +21,7 @@
     },
     "pageContent": {
       "topImage":"/img/projects/defyinggravity/DefyingGravity.png",
-      "topImageFull": "",
+      "topImageFull": "https://drive.google.com/uc?export=view&id=1jlE3oNt43bCOlKYALWK0bCo1BmaJw1xn",
       "mainDescription": "Defying Gravity is a game prototype developed in Unreal Engine and was made for a year-long project at the university. It is a simple platformer with levels right now one and some physics. There is an ability to climb a wall if the wall is low enough and if you decide to jump off the map you will be returned to level start. There is also the ability to pick up coins although it only makes the number go up."
     }
   },
@@ -30,7 +30,7 @@
     "title": "Teach Typing",
     "thumbnail": "/img/projects/thumbnails/teachTypingThumbnail.png",
     "pitchDescription": "Teach Typing is a typing game prototype project developed as university course final work. I was responsible mainly for backend and functionality.  It uses PHP and MYSQL database to make it unique for a user. It has lessons and each lesson you type text seen on screen and if you make a mistake you can correct it, but it will know that you corrected it. When the lesson is finished it shows all information about how you did and saves it to the database.",
-    "type": "Web",
+    "type": "Website",
     "platform": "Web",
     "finnished": true,
     "time": "2023.Q2",
@@ -97,7 +97,7 @@
     ],
     "pageContent": {
         "topImage":"/img/projects/snakegame/SnakeGame.png",
-        "topImageFull": "",
+        "topImageFull": "https://drive.google.com/uc?export=view&id=1oWlv61bH7WGWWg2pDTXnfMcrXWmnZ3oR",
         "mainDescription":"This project was developed for university course final work where we needed to develop some kind of website. We were 2 people I was mainly responsible for PHP and database interactions and some JS while the other person was mainly doing CSS styling and web design. The project is just a simple lesson list with basic statistics about each lesson completed.",
         "content":[]
     
