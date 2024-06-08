@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 #mainImage {
     width:60%;
@@ -22,4 +23,28 @@
 
 #description{
     padding: 15px 5vw 15px 5vw;
+}
+
+@media (max-width: 750px) {
+    #Top {
+        display:flex;
+        flex-direction: column;
+    }
+    #topLeft {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+    }
+    #topRight {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #mainImage {
+        width: 100%;
+    }
+    #description{
+        padding: 15px 5vw 15px 5vw;
+    }
 }

@@ -1,14 +1,22 @@
+
+
 #header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: left;
+    padding-bottom: 10px;
 }
 
 #headerBackButton > svg{
     width: auto;
     height: 60px;
     cursor: pointer;
+}
+
+#headerBackButton > svg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
 }
 
 #subHeader {
