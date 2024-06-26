@@ -55,6 +55,10 @@
             "problemsolving": {
                 "dark": "/img/icons/skills/cog-svgrepo-com.svg",
                 "light": "/img/icons/skills/cog-svgrepo-com.svg"
+            },
+            "c#": {
+                "dark": "/img/icons/skills/c-sharp-svgrepo-com.svg",
+                "light": "/img/icons/skills/c-sharp-svgrepo-com.svg"
             }
         }
     }

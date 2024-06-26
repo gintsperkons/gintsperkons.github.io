@@ -1,6 +1,6 @@
 {
   "defyingGravity": {
-    "pageSequence":1,
+    "pageSequence":2,
     "complete": true,
     "title": "Defying Gravity",
     "thumbnail": "/img/projects/thumbnails/definingGravityThumbnail.png",
@@ -26,7 +26,7 @@
     }
   },
   "teachTyping": {
-    "pageSequence":2,
+    "pageSequence":3,
     "title": "Teach Typing",
     "thumbnail": "/img/projects/thumbnails/teachTypingThumbnail.png",
     "pitchDescription": "Teach Typing is a typing game prototype project developed as university course final work. I was responsible mainly for backend and functionality.  It uses PHP and MYSQL database to make it unique for a user. It has lessons and each lesson you type text seen on screen and if you make a mistake you can correct it, but it will know that you corrected it. When the lesson is finished it shows all information about how you did and saves it to the database.",
@@ -76,7 +76,7 @@
     }
   },
   "snakeGame": {
-    "pageSequence":3,
+    "pageSequence":4,
     "complete": true,
     "title": "Snake Game",
     "thumbnail": "/img/projects/thumbnails/snakeGameThumbnail.png",
@@ -98,7 +98,34 @@
     "pageContent": {
         "topImage":"/img/projects/snakegame/SnakeGame.png",
         "topImageFull": "https://drive.google.com/uc?export=view&id=1oWlv61bH7WGWWg2pDTXnfMcrXWmnZ3oR",
-        "mainDescription":"This project was developed for university course final work where we needed to develop some kind of website. We were 2 people I was mainly responsible for PHP and database interactions and some JS while the other person was mainly doing CSS styling and web design. The project is just a simple lesson list with basic statistics about each lesson completed.",
+        "mainDescription":"This project was developed for university course final in first year work where the requirement was to develop anything in Java. I chose to make a copy for popular and simple snake game. The game is simple you control the snake with arrow keys and try to eat the apple. The snake grows longer each time it eats the apple and if it hits the wall or itself the game ends.",
+        "content":[]
+    
+    }
+  },
+  "catGame": {
+    "pageSequence":1,
+    "complete": true,
+    "title": "Cat Game",
+    "thumbnail": "/img/projects/thumbnails/catGameThumbnail.png",
+    "pitchDescription": "Cat Game is a game prototype developed in Unity and was made for a course project at the university. It is a game where the cat is puishing items around the house and gathering points while the owner is at work.",
+    "type": "Game",
+    "platform": "Windows",
+    "time": "2024.Q2",
+    "projectPage": "/projects/catgame/",
+    "repository": {
+      "type": "github",
+      "sourceCode": "https://github.com/gintsperkons/UnityCatGame"
+    },
+    "technologies": [
+      "Unity",
+      "C#",
+      "Blender"
+    ],
+    "pageContent": {
+        "topImage":"/img/projects/unitycatgame/catGame.png",
+        "topImageFull": "https://drive.google.com/uc?export=view&id=1moLpoO89kFBkbIk6g0IsbEpNeQdrCJW1",
+        "mainDescription":"Cat Game is a game prototype developed in Unity and was made for a course project at the university. The cat is destroying the house while owner is at work from 8:00 to 17:00. At 17:00 the game ends and depending on the score there is some message shown, trying to imitate the reactions from the owner when he got home and saw the mess. The score is calculated by getting the distance the item is moved and adding it to total when the item physics goes to sleep.",
         "content":[]
     
     }
